@@ -1637,6 +1637,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   transform: translateX(0);
 }
 
+.first-screen__wrap-button-down.center {
+  bottom: 120px;
+}
+
 .first-screen__button-down {
   color: #fff;
   display: table;
@@ -1995,6 +1999,66 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 .instagram__btn-next {
   margin-left: 20px;
+}
+
+/* Page - Experience */
+
+.experience {
+  background-color: #CEE4EE;
+  padding-bottom: 127px;
+  padding-top: 160px;
+}
+
+.experience .n_sec-title {
+  margin-bottom: 32px;
+}
+
+.experience__columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.experience__column {
+  margin: 32px 10px;
+  width: 100%;
+}
+
+.experience__column h2,
+.experience__column p {
+  color: #2E2A27;
+}
+
+.experience__column h2 {
+  font-family: "PP Neue Montreal", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 18px 0 0;
+  text-transform: uppercase;
+}
+
+.experience__column p {
+  font-size: 16px;
+  line-height: 19.2px;
+  margin: 8px 0 0;
+}
+
+.experience__blockImage {
+  display: block;
+  height: 470px;
+  position: relative;
+}
+
+.experience__blockImage img {
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 /* Page - Contacts */
@@ -2419,6 +2483,33 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .instagram__btn-next svg.mobile {
     display: none;
   }
+
+  .experience__column:nth-child(1),
+  .experience__column:nth-child(4),
+  .experience__column:nth-child(5),
+  .experience__column:nth-child(8),
+  .experience__column:nth-child(10),
+  .experience__column:nth-child(13),
+  .experience__column:nth-child(14),
+  .experience__column:nth-child(17) {
+    width: calc(67% - 24px);
+  }
+
+  .experience__column:nth-child(2),
+  .experience__column:nth-child(3),
+  .experience__column:nth-child(6),
+  .experience__column:nth-child(7),
+  .experience__column:nth-child(11),
+  .experience__column:nth-child(12),
+  .experience__column:nth-child(15),
+  .experience__column:nth-child(16) {
+    width: calc(33% - 16px);
+  }
+
+  .experience__column:nth-child(9),
+  .experience__column:nth-child(18) {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 721px) {
@@ -2658,6 +2749,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .header .menu__arrow {
     bottom: 2px;
+  }
+
+  .experience__blockImage {
+    height: 36.7vw;
   }
 }
 
@@ -3204,6 +3299,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     transform: translateX(-50%);
   }
 
+  .first-screen__wrap-button-down.center {
+    bottom: 60px;
+  }
+
   .first-screen__button-down {
     font-size: 14px;
   }
@@ -3314,6 +3413,43 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .instagram__btn-next {
     margin-left: 10px;
+  }
+
+  .experience {
+    padding-bottom: 59px;
+    padding-top: 80px;
+  }
+
+  .experience .n_sec-title {
+    margin-bottom: 20px;
+  }
+
+  .experience__column {
+    margin: 20px 10px;
+  }
+
+  .experience__column:nth-child(2),
+  .experience__column:nth-child(3),
+  .experience__column:nth-child(6),
+  .experience__column:nth-child(7),
+  .experience__column:nth-child(10),
+  .experience__column:nth-child(11) {
+    width: calc(50% - 20px);
+  }
+
+  .experience__column h2 {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .experience__column p {
+    font-size: 14px;
+    line-height: 16.8px;
+    margin-top: 9px;
+  }
+
+  .experience__blockImage {
+    height: 63.1vw;
   }
 
   .contacts-page__blockTitleAboveMap {
@@ -3489,6 +3625,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .restaurant__button:hover::after {
     transform: translateX(160%);
+  }
+
+  .experience__column h2 a:hover {
+    color: #000;
   }
 
   .contact__form input[type=submit]:hover::after,
