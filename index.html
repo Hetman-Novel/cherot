@@ -4,14 +4,81 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20240605173923">
-   <link rel="stylesheet" href="css/style.min.css?_v=20240605173923">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20240605210145">
+   <link rel="stylesheet" href="css/style.min.css?_v=20240605210145">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
    <title>Головна - Cherot</title>
 </head>
 <body>
    <div class="wrapper">
-      
+      <header class="header">
+   <div class="header__wrapper lock-padding">
+      <div id="header-container" class="n_container header-container">
+         <div class="left">
+            <button id="burger" class="header__burger" type="button">
+               <svg width="30" height="21" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line y1="1.5" x2="30" y2="1.5" stroke="white" stroke-width="2"/>
+                  <line y1="10.5" x2="16" y2="10.5" stroke="white" stroke-width="2"/>
+                  <line y1="19.5" x2="30" y2="19.5" stroke="white" stroke-width="2"/>
+               </svg>
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#burger-icon)">
+                     <path d="M13.4034 12.1052L23.704 1.80069C23.7962 1.7085 23.8692 1.59906 23.9191 1.47862C23.969 1.35817 23.9947 1.22908 23.9947 1.09871C23.9947 0.968339 23.969 0.839246 23.9191 0.7188C23.8692 0.598354 23.7962 0.488914 23.704 0.396729C23.6119 0.304543 23.5025 0.231418 23.3821 0.181527C23.2617 0.131637 23.1326 0.105959 23.0023 0.105959C22.872 0.105959 22.7429 0.131637 22.6225 0.181527C22.5021 0.231418 22.3927 0.304543 22.3006 0.396729L12 10.5953L1.69942 0.290769C1.60727 0.198584 1.49788 0.125459 1.37748 0.0755682C1.25708 0.0256778 1.12803 9.71331e-10 0.997714 0C0.867394 -9.71331e-10 0.738351 0.0256778 0.617951 0.0755682C0.497551 0.125459 0.388152 0.198584 0.296002 0.290769C0.203853 0.382955 0.130756 0.492395 0.0808852 0.61284C0.031014 0.733286 0.00534478 0.862379 0.00534479 0.992749C0.00534479 1.12312 0.031014 1.25221 0.0808852 1.37266C0.130756 1.49311 0.203852 1.60254 0.296002 1.69473L10.5966 12.1052L0.296002 22.3038C0.202321 22.3951 0.127867 22.5043 0.0770291 22.6248C0.0261915 22.7454 0 22.8749 0 23.0058C0 23.1366 0.0261915 23.2662 0.0770291 23.3867C0.127867 23.5073 0.202321 23.6164 0.296002 23.7078C0.383199 23.8028 0.489796 23.8781 0.608577 23.9283C0.727358 23.9786 0.85555 24.0028 0.984473 23.9992C1.11737 24.0031 1.24963 23.9793 1.37275 23.9291C1.49588 23.8789 1.60715 23.8035 1.69942 23.7078L12 13.4032L22.3006 23.7078C22.3878 23.8028 22.4944 23.8781 22.6132 23.9283C22.7319 23.9786 22.8601 24.0028 22.989 23.9992C23.1222 24.0048 23.2549 23.9818 23.3783 23.9315C23.5017 23.8812 23.6128 23.8049 23.704 23.7078C23.7977 23.6164 23.8721 23.5073 23.923 23.3867C23.9738 23.2662 24 23.1366 24 23.0058C24 22.8749 23.9738 22.7454 23.923 22.6248C23.8721 22.5043 23.7977 22.3951 23.704 22.3038L13.4034 12.1052Z" fill="white"/>
+                  </g>
+                  <defs>
+                     <clipPath id="burger-icon">
+                        <rect width="24" height="24" fill="white"/>
+                     </clipPath>
+                  </defs>
+               </svg>
+            </button>
+         </div>
+         <div class="header__blockLogo wrap-lazy-load-image">
+            <img src="images/svg/logo.svg" alt="">
+         </div>
+         <div class="right">
+            <div data-da="n_container_body_menu, last, 720" class="header__lang-buttons">
+               <a href="/ua" class="current">ua</a>
+               <a href="/en">en</a>
+            </div>
+            <a href="#" class="header__btn-circle no-interaction">Book</a>
+         </div>
+      </div>
+   </div>
+   <div class="header__body-menu">
+      <div class="header__body-block">
+         <div class="n_container n_container_body_menu">
+            <nav class="header__nav">
+               <ul>
+                  <li class="current-menu-item current_page_item">
+                     <a href="thought.html">місце</a>
+                  </li>
+                  <li>
+                     <a href="experience.html">досвід</a>
+                  </li>
+                  <li>
+                     <a href="rooms.html">Кімнати</a>
+                  </li>
+                  <li>
+                     <a href="restaurant.html">ресторан</a>
+                  </li>
+                  <li>
+                     <a href="#">Події</a>
+                  </li>
+                  <li>
+                     <a href="music.html">Музика</a>
+                  </li>
+                  <li>
+                     <a href="contacts.html">контакти</a>
+                  </li>
+               </ul>
+            </nav>
+            <img data-da="header__body-menu, last, 640" class="header__illustration desktop" src="images/svg/burger-menu-illustration.svg" alt="">
+            <img data-da="header__body-menu, last, 640" class="header__illustration mobile" src="images/svg/burger-menu-illustration-mobile.svg" alt="">
+         </div>
+      </div>
+   </div>
+</header>
       <main class="main front-page">
 
          <div class="first-screen">
@@ -368,7 +435,7 @@
             <div class="footer__column">
                <ul class="footer__menu">
                   <li>
-                     <a href="#">місце</a>
+                     <a href="thought.html">місце</a>
                   </li>
                   <li>
                      <a href="experience.html">досвід</a>
@@ -383,10 +450,10 @@
                      <a href="#">Події</a>
                   </li>
                   <li>
-                     <a href="#">Музика</a>
+                     <a href="music.html">Музика</a>
                   </li>
                   <li>
-                     <a href="#">блог</a>
+                     <a href="blocg.html">блог</a>
                   </li>
                   <li>
                      <a href="contacts.html">контакти</a>
@@ -411,11 +478,11 @@
 
    </div>
 
-   <script src="js/script.min.js?_v=20240605173923"></script>
+   <script src="js/script.min.js?_v=20240605210145"></script>
    
-   <!--<script src="files/js/jquery-3.6.1.min.js?_v=20240605173923"></script>-->
-   <script src="files/swiper/js/swiper-bundle.min.js?_v=20240605173923"></script>
-   <script src="files/swiper/js/init.js?_v=20240605173923"></script>
+   <!--<script src="files/js/jquery-3.6.1.min.js?_v=20240605210145"></script>-->
+   <script src="files/swiper/js/swiper-bundle.min.js?_v=20240605210145"></script>
+   <script src="files/swiper/js/init.js?_v=20240605210145"></script>
 
 </body>
 </html>
