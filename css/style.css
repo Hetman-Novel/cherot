@@ -1570,7 +1570,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 .first-screen {
   background-color: #a7a7a7;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   padding-bottom: 120px;
   padding-top: 120px;
@@ -1698,6 +1698,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 .swiper-pagination.home-fs.swiper-pagination-bullets .swiper-pagination-bullet {
   background-color: #BFBFBF;
+  border-radius: 0;
   height: 2px;
   opacity: 1;
   margin-left: 10px;
@@ -1999,6 +2000,130 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 .instagram__btn-next {
   margin-left: 20px;
+}
+
+/* Page - Events */
+
+.events {
+  background-color: #CEE4EE;
+  padding-bottom: 160px;
+}
+
+.events .numbers {
+  margin-top: 0;
+}
+
+.events .numbers__wrap-slider {
+  padding-bottom: 81px;
+}
+
+.events .numbers__sliderBlockIimage {
+  padding-bottom: 62.8%;
+}
+
+.events__slider {
+  margin-left: -103%;
+}
+
+.events__slider .swiper-slide p {
+  color: #2E2A27;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left;
+  margin-top: 14px;
+  text-transform: uppercase;
+}
+
+.events .restaurant__columns {
+  margin-top: 0;
+}
+
+.events .restaurant__column p {
+  max-width: 100%;
+}
+
+.events .first-screen {
+  margin-bottom: 161px;
+}
+
+.events .n_sec-title {
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 17px;
+}
+
+.events__block {
+  margin-top: 80px;
+}
+
+.events__blockText p {
+  color: #2E2A27;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33.6px;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.events__blockText p:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.events__blockText p strong {
+  color: #000;
+}
+
+.events__blockButton {
+  align-items: center;
+  background-color: #D85B1D;
+  border-radius: 3px;
+  color: #2E2A27;
+  display: inline-flex;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  height: 42px;
+  margin-top: 40px;
+  padding: 0 21px 0 20px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.events__blockButton::after {
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='37' height='6' viewBox='0 0 37 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 5.5H37C35.138 5.5 32.79 4.43443 32.0611 0.5' stroke='%232E2A27'/%3e%3c/svg%3e");
+  margin: -3px 0 3px 16px;
+}
+
+.events__blockColumns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: 64px;
+}
+
+.events__blockColumn {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
+}
+
+.events__blockImage {
+  display: block;
+  height: 100%;
+  padding-bottom: 52.5%;
+  position: relative;
+}
+
+.events__blockImage img {
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 /* Page - Experience */
@@ -2432,6 +2557,18 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .numbers__slider {
     margin-left: -79.2%;
   }
+
+  .events__slider {
+    margin-left: -76%;
+  }
+
+  .events__blockColumn:nth-child(1) {
+    width: calc(75% - 20px);
+  }
+
+  .events__blockColumn:nth-child(2) {
+    width: calc(25% - 20px);
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -2482,6 +2619,19 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .instagram__btn-prev svg.mobile,
   .instagram__btn-next svg.mobile {
     display: none;
+  }
+
+  .events__slider .swiper-slide p {
+    display: none;
+  }
+
+  .events .restaurant__column:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .events .restaurant__column .events__blockButton {
+    margin: -15px 0 15px;
   }
 
   .experience__column:nth-child(1),
@@ -3415,6 +3565,63 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-left: 10px;
   }
 
+  .events {
+    padding-bottom: 80px;
+  }
+
+  .events .numbers {
+    padding-top: 80px;
+  }
+
+  .events .numbers__wrap-slider {
+    margin-top: 40px;
+    padding-bottom: 0;
+  }
+
+  .events .numbers__sliderBlockIimage {
+    padding-bottom: 82.4%;
+  }
+
+  .events .restaurant__column p {
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+
+  .events .restaurant__column .events__blockButton {
+    margin: 20px 0 0;
+  }
+
+  .events .first-screen {
+    margin-bottom: 81px;
+  }
+
+  .events .n_sec-title {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .events__blockText p {
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+
+  .events__blockText p:not(:last-child) {
+    margin-bottom: 21px;
+  }
+
+  .events__blockButton {
+    margin-top: 15px;
+  }
+
+  .events__blockColumns {
+    margin-top: 48px;
+  }
+
+  .events__blockImage {
+    padding-bottom: 70.7%;
+  }
+
   .experience {
     padding-bottom: 59px;
     padding-top: 80px;
@@ -3450,6 +3657,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .experience__blockImage {
     height: 63.1vw;
+  }
+
+  .contacts-page .first-screen__wrap-button-down {
+    bottom: 0;
   }
 
   .contacts-page__blockTitleAboveMap {
@@ -3574,6 +3785,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 }
 
+@media screen and (max-width: 480.98px) {
+  .events__blockColumn:nth-child(2) {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 460.98px) {
   .contact__form input:not([type=submit]) {
     width: 100%;
@@ -3625,6 +3842,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .restaurant__button:hover::after {
     transform: translateX(160%);
+  }
+
+  .events__blockButton:hover {
+    color: #000;
   }
 
   .experience__column h2 a:hover {
