@@ -71,6 +71,51 @@ if (numbersSlider) {
    });
 }
 
+const eventsSlider = document.querySelector('.events__slider')
+if (eventsSlider) {
+   new Swiper(eventsSlider, {
+      navigation: {
+         prevEl: '#events-slider-swiper-button-prev',
+         nextEl: '#events-slider-swiper-button-next',
+      },
+      //slidesPerView: 1.76,
+      watchOverflow: true,
+      spaceBetween: 20,
+      //centeredSlides: true,
+      loop: true,
+      speed: 800,
+      effect: 'slide',
+      preloadImages: false, // Отключить предзагрузка картинок
+      lazy: { // Lazy Loading (подгрузка картинок)
+         loadOnTransitionStart: false, // Подгружать на старте переключения слайда
+         loadPrewNext: false, // Подгрузить предыдущую и следующую картинку
+      },
+      watchSlidesProgress: true, // Слежка за видимыми слайдами
+      watchSlidesVisibility: true, // Добавление класса видимым слайдам
+      breakpoints: {
+         0: {
+            slidesPerView: 2.0,
+            spaceBetween: 10,
+         },
+         480: {
+            slidesPerView: 2.335,
+            spaceBetween: 20,
+         },
+         721: {
+            slidesPerView: 2.335,
+            spaceBetween: 20,
+         },
+         1025: {
+            slidesPerView: 2.335,
+            spaceBetween: 20,
+         },
+         1100: {
+            slidesPerView: 2.335,
+         }
+      }
+   });
+}
+
 const instagramSlider = document.querySelector('.instagram__slider')
 if (instagramSlider) {
    new Swiper(instagramSlider, {
