@@ -171,7 +171,7 @@ if (restaurantSlider) {
       slidesPerView: 1,
       watchOverflow: true,
       spaceBetween: 50,
-      loop: true,
+      //loop: true,
       speed: 800,
       effect: 'fade',
       preloadImages: false, // Отключить предзагрузка картинок
@@ -194,7 +194,7 @@ if (kitchenSlider) {
       slidesPerView: 1,
       watchOverflow: true,
       spaceBetween: 50,
-      loop: true,
+      //loop: true,
       speed: 800,
       effect: 'fade',
       preloadImages: false, // Отключить предзагрузка картинок
@@ -217,7 +217,7 @@ if (thereIsSlider) {
       slidesPerView: 1,
       watchOverflow: true,
       spaceBetween: 50,
-      loop: true,
+      //loop: true,
       speed: 800,
       effect: 'fade',
       preloadImages: false, // Отключить предзагрузка картинок
@@ -227,5 +227,160 @@ if (thereIsSlider) {
       },
       watchSlidesProgress: true, // Слежка за видимыми слайдами
       watchSlidesVisibility: true, // Добавление класса видимым слайдам
+   });
+}
+
+const pageRooms1Slider = document.querySelector('.page-rooms1__slider')
+if (pageRooms1Slider) {
+   new Swiper(pageRooms1Slider, {
+      navigation: {
+         prevEl: '#page-rooms-1-slider-slider-swiper-button-prev',
+         nextEl: '#page-rooms-1-slider-slider-swiper-button-next',
+      },
+      slidesPerView: 1,
+      watchOverflow: true,
+      spaceBetween: 20,
+      //loop: true,
+      speed: 800,
+      effect: 'slide',
+      preloadImages: false, // Отключить предзагрузка картинок
+      lazy: { // Lazy Loading (подгрузка картинок)
+         loadOnTransitionStart: false, // Подгружать на старте переключения слайда
+         loadPrewNext: false, // Подгрузить предыдущую и следующую картинку
+      },
+      watchSlidesProgress: true, // Слежка за видимыми слайдами
+      watchSlidesVisibility: true, // Добавление класса видимым слайдам
+      breakpoints: {
+         0: {
+            spaceBetween: 9,
+         },
+         576: {
+            spaceBetween: 20,
+         }
+      }
+   });
+}
+
+const pageRooms2Slider = document.querySelector('.page-rooms2__slider')
+if (pageRooms2Slider) {
+   new Swiper(pageRooms2Slider, {
+      navigation: {
+         prevEl: '#page-rooms-2-slider-slider-swiper-button-prev',
+         nextEl: '#page-rooms-2-slider-slider-swiper-button-next',
+      },
+      slidesPerView: 1,
+      watchOverflow: true,
+      spaceBetween: 20,
+      //loop: true,
+      speed: 800,
+      effect: 'slide',
+      preloadImages: false, // Отключить предзагрузка картинок
+      lazy: { // Lazy Loading (подгрузка картинок)
+         loadOnTransitionStart: false, // Подгружать на старте переключения слайда
+         loadPrewNext: false, // Подгрузить предыдущую и следующую картинку
+      },
+      watchSlidesProgress: true, // Слежка за видимыми слайдами
+      watchSlidesVisibility: true, // Добавление класса видимым слайдам
+      breakpoints: {
+         0: {
+            spaceBetween: 9,
+         },
+         576: {
+            spaceBetween: 20,
+         }
+      }
+   });
+}
+
+const pageRooms3Slider = document.querySelector('.page-rooms3__slider')
+if (pageRooms3Slider) {
+   new Swiper(pageRooms3Slider, {
+      navigation: {
+         prevEl: '#page-rooms-3-slider-slider-swiper-button-prev',
+         nextEl: '#page-rooms-3-slider-slider-swiper-button-next',
+      },
+      slidesPerView: 1,
+      watchOverflow: true,
+      spaceBetween: 20,
+      //loop: true,
+      speed: 800,
+      effect: 'slide',
+      preloadImages: false, // Отключить предзагрузка картинок
+      lazy: { // Lazy Loading (подгрузка картинок)
+         loadOnTransitionStart: false, // Подгружать на старте переключения слайда
+         loadPrewNext: false, // Подгрузить предыдущую и следующую картинку
+      },
+      watchSlidesProgress: true, // Слежка за видимыми слайдами
+      watchSlidesVisibility: true, // Добавление класса видимым слайдам
+      breakpoints: {
+         0: {
+            spaceBetween: 9,
+         },
+         576: {
+            spaceBetween: 20,
+         }
+      }
+   });
+}
+
+const pageRooms4Slider = document.querySelector('.page-rooms4__slider')
+if (pageRooms4Slider) {
+   new Swiper(pageRooms4Slider, {
+      navigation: {
+         prevEl: '#page-rooms-4-slider-slider-swiper-button-prev',
+         nextEl: '#page-rooms-4-slider-slider-swiper-button-next',
+      },
+      slidesPerView: 1,
+      watchOverflow: true,
+      spaceBetween: 20,
+      //loop: true,
+      speed: 800,
+      effect: 'slide',
+      preloadImages: false, // Отключить предзагрузка картинок
+      lazy: { // Lazy Loading (подгрузка картинок)
+         loadOnTransitionStart: false, // Подгружать на старте переключения слайда
+         loadPrewNext: false, // Подгрузить предыдущую и следующую картинку
+      },
+      watchSlidesProgress: true, // Слежка за видимыми слайдами
+      watchSlidesVisibility: true, // Добавление класса видимым слайдам
+      breakpoints: {
+         0: {
+            spaceBetween: 9,
+         },
+         576: {
+            spaceBetween: 20,
+         }
+      }
+   });
+}
+
+const pageRooms5Slider = document.querySelector('.page-rooms5__slider')
+if (pageRooms5Slider) {
+   new Swiper(pageRooms5Slider, {
+      navigation: {
+         prevEl: '#page-rooms-5-slider-slider-swiper-button-prev',
+         nextEl: '#page-rooms-5-slider-slider-swiper-button-next',
+      },
+      slidesPerView: 1,
+      watchOverflow: true,
+      spaceBetween: 20,
+      //loop: true,
+      speed: 800,
+      effect: 'slide',
+      preloadImages: false, // Отключить предзагрузка картинок
+      lazy: { // Lazy Loading (подгрузка картинок)
+         loadOnTransitionStart: false, // Подгружать на старте переключения слайда
+         loadPrewNext: false, // Подгрузить предыдущую и следующую картинку
+      },
+      watchSlidesProgress: true, // Слежка за видимыми слайдами
+      watchSlidesVisibility: true, // Добавление класса видимым слайдам
+      breakpoints: {
+         0: {
+            spaceBetween: 9,
+         },
+         576: {
+            spaceBetween: 20,
+         }
+      }
    });
 }
