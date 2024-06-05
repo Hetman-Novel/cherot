@@ -160,3 +160,72 @@ if (instagramSlider) {
       }
    });
 }
+
+const restaurantSlider = document.querySelector('.page-restaurant__slider')
+if (restaurantSlider) {
+   new Swiper(restaurantSlider, {
+      navigation: {
+         prevEl: '#restaurant-slider-swiper-button-prev',
+         nextEl: '#restaurant-slider-swiper-button-next',
+      },
+      slidesPerView: 1,
+      watchOverflow: true,
+      spaceBetween: 50,
+      loop: true,
+      speed: 800,
+      effect: 'fade',
+      preloadImages: false, // Отключить предзагрузка картинок
+      lazy: { // Lazy Loading (подгрузка картинок)
+         loadOnTransitionStart: false, // Подгружать на старте переключения слайда
+         loadPrewNext: false, // Подгрузить предыдущую и следующую картинку
+      },
+      watchSlidesProgress: true, // Слежка за видимыми слайдами
+      watchSlidesVisibility: true, // Добавление класса видимым слайдам
+   });
+}
+
+const kitchenSlider = document.querySelector('.kitchen__slider')
+if (kitchenSlider) {
+   new Swiper(kitchenSlider, {
+      navigation: {
+         prevEl: '#kitchen-slider-swiper-button-prev',
+         nextEl: '#kitchen-slider-swiper-button-next',
+      },
+      slidesPerView: 1,
+      watchOverflow: true,
+      spaceBetween: 50,
+      loop: true,
+      speed: 800,
+      effect: 'fade',
+      preloadImages: false, // Отключить предзагрузка картинок
+      lazy: { // Lazy Loading (подгрузка картинок)
+         loadOnTransitionStart: false, // Подгружать на старте переключения слайда
+         loadPrewNext: false, // Подгрузить предыдущую и следующую картинку
+      },
+      watchSlidesProgress: true, // Слежка за видимыми слайдами
+      watchSlidesVisibility: true, // Добавление класса видимым слайдам
+   });
+}
+
+const thereIsSlider = document.querySelector('.there-is__slider')
+if (thereIsSlider) {
+   new Swiper(thereIsSlider, {
+      navigation: {
+         prevEl: '#there-is-slider-swiper-button-prev',
+         nextEl: '#there-is-slider-swiper-button-next',
+      },
+      slidesPerView: 1,
+      watchOverflow: true,
+      spaceBetween: 50,
+      loop: true,
+      speed: 800,
+      effect: 'fade',
+      preloadImages: false, // Отключить предзагрузка картинок
+      lazy: { // Lazy Loading (подгрузка картинок)
+         loadOnTransitionStart: false, // Подгружать на старте переключения слайда
+         loadPrewNext: false, // Подгрузить предыдущую и следующую картинку
+      },
+      watchSlidesProgress: true, // Слежка за видимыми слайдами
+      watchSlidesVisibility: true, // Добавление класса видимым слайдам
+   });
+}
