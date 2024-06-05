@@ -4,8 +4,8 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20240605153324">
-   <link rel="stylesheet" href="css/style.min.css?_v=20240605153324">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20240605173923">
+   <link rel="stylesheet" href="css/style.min.css?_v=20240605173923">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
    <title>Досвід - Cherot</title>
 </head>
@@ -20,8 +20,12 @@
                   <a href="#experience" class="first-screen__button-down link-to-bottom">гортай вниз</a>
                </div>
             </div>
-            <div class="first-screen__bgBlock wrap-lazy-load-image">
-               <img src="images/bg-fs-experience.jpg" alt="">
+            <div class="first-screen__bgBlock">
+               <picture class="wrap-lazy-load-image">
+                  <source media="(min-width:481px)" srcset="images/bg-fs-experience.jpg">
+                  <source media="(max-width:480px)" srcset="images/bg-fs-experience-mobile.jpg">
+                  <img src="images/bg-fs-experience.jpg" alt="">
+               </picture>
             </div>
          </div>
          <div id="experience" class="experience">
@@ -195,7 +199,7 @@
                      <a href="experience.html">досвід</a>
                   </li>
                   <li>
-                     <a href="#">Кімнати</a>
+                     <a href="rooms.html">Кімнати</a>
                   </li>
                   <li>
                      <a href="restaurant.html">ресторан</a>
@@ -232,9 +236,9 @@
 
    </div>
 
-   <script src="js/script.min.js?_v=20240605153324"></script>
+   <script src="js/script.min.js?_v=20240605173923"></script>
    
-   <!--<script src="files/js/jquery-3.6.1.min.js?_v=20240605153324"></script>-->
+   <!--<script src="files/js/jquery-3.6.1.min.js?_v=20240605173923"></script>-->
 
 </body>
 </html>
