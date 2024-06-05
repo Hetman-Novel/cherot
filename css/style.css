@@ -553,7 +553,7 @@ main.main {
 }
 
 body {
-  background-color: #fff;
+  background-color: #CEE4EE;
   color: #000;
   font-family: "PP Neue Montreal", sans-serif;
   font-size: 16px;
@@ -1305,6 +1305,183 @@ h6 {
 /* n Spollers */
 
 /* n Pop up */
+
+body.lock {
+  overflow: hidden;
+}
+
+.popup {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  transition: all 0.6s ease 0s;
+  top: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  visibility: hidden;
+  width: 100%;
+  z-index: 105;
+}
+
+.popup {
+  /*&-video {
+
+     .popup__content {
+        @include adaptive-value("height", 392, 180, 1);
+        @include adaptive-value("width", 695, 335, 1);
+        position: relative;
+
+        iframe {
+           left: 0;
+           height: 100%;
+           object-fit: cover;
+           position: absolute;
+           top: 0;
+           width: 100%;
+        }
+     }
+  }*/
+}
+
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.popup__content {
+  background-color: #1E3932;
+  max-width: 100%;
+  padding: 80px 40px 20px 36px;
+  position: relative;
+  width: 850px;
+}
+
+.popup__content-image {
+  padding: 0 !important;
+}
+
+.popup__content-image img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.popup__close {
+  align-items: center;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 8px;
+  top: 18px;
+  width: 32px;
+}
+
+.popup__form p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  margin: 0 0 23px;
+}
+
+.popup__form input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #8E9C98;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  margin-bottom: 15px;
+  padding-bottom: 2px;
+  width: 100%;
+}
+
+.popup__form input::-moz-placeholder {
+  color: #fff;
+}
+
+.popup__form input::placeholder {
+  color: #fff;
+}
+
+.popup__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popup__item {
+  padding-bottom: 37px;
+  width: 100%;
+}
+
+.popup__item:nth-child(1) {
+  padding-top: 23px;
+  position: relative;
+}
+
+.popup__item:nth-child(1)::after {
+  background-color: rgba(255, 255, 255, 0.1);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 1px;
+}
+
+.popup__item:nth-child(1) a {
+  font-family: "Stravinsky Trial", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.popup__item:nth-child(1) p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.6px;
+  margin: 11px 0 0;
+}
+
+.popup__item:nth-child(1) img {
+  margin-top: 43px;
+}
+
+.popup__item:nth-child(2) {
+  padding-top: 38px;
+}
+
+.popup__item:nth-child(3) {
+  padding-bottom: 0;
+  padding-top: 38px;
+}
+
+.popup__item:nth-child(3) img {
+  display: table;
+  margin: 0 auto;
+}
+
+.popup .events__blockButton {
+  color: #fff !important;
+  margin-top: 32px !important;
+}
+
+.popup .events__blockButton::after {
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='37' height='6' viewBox='0 0 37 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 5.5H37C35.138 5.5 32.79 4.43443 32.0611 0.5' stroke='white'/%3e%3c/svg%3e");
+}
 
 /* n Classes */
 
@@ -2126,6 +2303,78 @@ body._touch .header .menu__list > li._active .menu__arrow {
   width: 100%;
 }
 
+/* Page - Restaurant */
+
+.page-restaurant {
+  overflow: hidden;
+  padding-bottom: 162px;
+}
+
+.page-restaurant .first-screen {
+  margin-bottom: 140px;
+}
+
+.page-restaurant__items:nth-child(1) {
+  padding-top: 20px;
+}
+
+.page-restaurant__items:not(:last-child) {
+  margin-bottom: 162px;
+}
+
+.page-restaurant__item {
+  color: #2E2A27;
+}
+
+.page-restaurant__item h2 {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 56px;
+  margin: 0;
+}
+
+.page-restaurant__blockText {
+  padding-top: 40px;
+}
+
+.page-restaurant__blockText p {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3000000119px;
+  margin: 0;
+}
+
+.page-restaurant__blockText p strong {
+  color: #000;
+}
+
+.page-restaurant .events__blockButton {
+  height: auto;
+  margin-top: 30px;
+  padding: 10px 18px;
+}
+
+.page-restaurant__blockImage {
+  display: block;
+  padding-bottom: 132.4%;
+  position: relative;
+}
+
+.page-restaurant__blockImage img {
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.page-restaurant .instagram__wrap-buttons {
+  transform: translateX(-46px);
+  width: 224px;
+}
+
 /* Page - Experience */
 
 .experience {
@@ -2662,9 +2911,76 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 }
 
+@media screen and (min-width: 641px) {
+  .popup__item:nth-child(1),
+  .popup__item:nth-child(2) {
+    width: 50%;
+  }
+
+  .popup__item:nth-child(1) {
+    padding-right: 15px;
+  }
+
+  .popup__item:nth-child(1)::after {
+    right: 0;
+    top: 0;
+  }
+
+  .popup__item:nth-child(2) {
+    padding-left: 39px;
+  }
+}
+
 @media screen and (min-width: 721px) {
   .lake-hotel__illustration.mobile {
     display: none;
+  }
+
+  .page-restaurant__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .page-restaurant__item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .page-restaurant__item:nth-child(1) {
+    width: 230px;
+  }
+
+  .page-restaurant__item:nth-child(2) {
+    width: calc(100% - 230px - 130px - 60px);
+  }
+
+  .page-restaurant__item:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 130px;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .page-restaurant__item:nth-child(1) {
+    width: 285px;
+  }
+
+  .page-restaurant__item:nth-child(2) {
+    width: calc(100% - 285px - 130px - 60px);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .page-restaurant__item:nth-child(2) {
+    width: calc(100% - 290px - 178px - 60px);
+  }
+
+  .page-restaurant__item:nth-child(3) {
+    width: 178px;
   }
 }
 
@@ -2880,6 +3196,24 @@ body._touch .header .menu__list > li._active .menu__arrow {
 @media screen and (max-width: 1920.98px) {
   .block-video {
     padding-bottom: 56.8%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .popup__body {
+    padding-bottom: calc(35px + 15 * ((100vw - 320px) / 960));
+  }
+
+  .popup__body {
+    padding-right: calc(20px + 30 * ((100vw - 320px) / 960));
+  }
+
+  .popup__body {
+    padding-left: calc(20px + 30 * ((100vw - 320px) / 960));
+  }
+
+  .popup__body {
+    padding-top: calc(35px + 15 * ((100vw - 320px) / 960));
   }
 }
 
@@ -3288,6 +3622,16 @@ body._touch .header .menu__list > li._active .menu__arrow {
     width: 52px;
   }
 
+  .page-restaurant__item h2 {
+    font-size: 44px;
+    line-height: 44px;
+  }
+
+  .page-restaurant .instagram__wrap-buttons {
+    transform: translateX(6px);
+    width: 124px;
+  }
+
   .contacts-page__blockForm {
     padding-bottom: 120px;
     padding-top: 100px;
@@ -3381,11 +3725,33 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .lake-hotel__illustration.desktop {
     display: none;
   }
+
+  .page-restaurant__item:nth-child(2) {
+    margin-top: 40px;
+  }
+
+  .page-restaurant .instagram__wrap-buttons {
+    margin-top: 24px;
+  }
 }
 
 @media screen and (max-width: 660.98px) {
   .header .menu .menu-topmenu-container {
     position: relative;
+  }
+}
+
+@media screen and (max-width: 640.98px) {
+  .popup__item:nth-child(1)::after {
+    bottom: 0;
+    height: 1px;
+    left: 0;
+    width: 100%;
+  }
+
+  .popup__item:nth-child(2) {
+    padding-bottom: 113px;
+    padding-top: 49px;
   }
 }
 
@@ -3403,6 +3769,60 @@ body._touch .header .menu__list > li._active .menu__arrow {
     font-size: 40px;
     font-weight: 300;
     line-height: 40px;
+  }
+
+  .popup__body {
+    padding: 0;
+  }
+
+  .popup__content {
+    min-height: 100vh;
+    padding: 42px 20px 25px;
+  }
+
+  .popup__close {
+    right: 13px;
+    top: 13px;
+  }
+
+  .popup__form p {
+    font-size: 14px;
+    line-height: 16.8px;
+    margin-bottom: 21px;
+  }
+
+  .popup__form input {
+    font-size: 14px;
+    line-height: 18.2px;
+    margin-bottom: 16px;
+    padding-bottom: 3px;
+  }
+
+  .popup__item {
+    padding-bottom: 48px;
+  }
+
+  .popup__item:nth-child(1) p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    margin-top: 5px;
+  }
+
+  .popup__item:nth-child(1) img {
+    max-width: 179px;
+    margin-top: 23px;
+  }
+
+  .popup__item:nth-child(3) {
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+
+  .popup .events__blockButton {
+    margin-top: 19px !important;
   }
 
   .header__btn {
@@ -3620,6 +4040,69 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .events__blockImage {
     padding-bottom: 70.7%;
+  }
+
+  .page-restaurant {
+    padding-bottom: 73px;
+  }
+
+  .page-restaurant .first-screen {
+    margin-bottom: 60px;
+  }
+
+  .page-restaurant__items:not(:last-child) {
+    margin-bottom: 72px;
+  }
+
+  .page-restaurant__item h2 {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 36px;
+  }
+
+  .page-restaurant__blockText {
+    padding-top: 15px;
+  }
+
+  .page-restaurant__blockText p {
+    font-size: 14px;
+  }
+
+  .page-restaurant .events__blockButton {
+    margin-top: 14px;
+  }
+
+  .page-restaurant .instagram__wrap-buttons {
+    justify-content: flex-start;
+    margin-top: 0;
+    transform: translateX(-1px);
+  }
+
+  .page-restaurant .instagram__btn-next,
+  .page-restaurant .instagram__btn-prev {
+    height: 54px;
+    margin-top: 25px;
+    width: 54px;
+  }
+
+  .page-restaurant .instagram__btn-next svg,
+  .page-restaurant .instagram__btn-prev svg {
+    height: 52px;
+    width: 52px;
+  }
+
+  .page-restaurant .instagram__btn-next svg.desktop,
+  .page-restaurant .instagram__btn-prev svg.desktop {
+    display: block;
+  }
+
+  .page-restaurant .instagram__btn-next svg.mobile,
+  .page-restaurant .instagram__btn-prev svg.mobile {
+    display: none;
+  }
+
+  .page-restaurant .instagram__btn-next {
+    margin-left: 14px;
   }
 
   .experience {
