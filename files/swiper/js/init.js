@@ -384,3 +384,34 @@ if (pageRooms5Slider) {
       }
    });
 }
+
+const thoughtSlider = document.querySelector('.thought__slider')
+if (thoughtSlider) {
+   new Swiper(thoughtSlider, {
+      slidesPerView: 'auto',
+      freeMode: true,
+      watchOverflow: true,
+      spaceBetween: 0,
+      //loop: true,
+      speed: 800,
+      effect: 'slide',
+      preloadImages: false, // Отключить предзагрузка картинок
+      lazy: { // Lazy Loading (подгрузка картинок)
+         loadOnTransitionStart: false, // Подгружать на старте переключения слайда
+         loadPrewNext: false, // Подгрузить предыдущую и следующую картинку
+      },
+      watchSlidesProgress: true, // Слежка за видимыми слайдами
+      watchSlidesVisibility: true, // Добавление класса видимым слайдам
+      // Управление клавиатурой
+      /*
+      mousewheel: {
+         // Чувствительность колеса мыши
+         sensitivity: 1,
+         // Класс объекта на котором
+         // будет срабатывать прокрутка мышью.
+         eventsTarget: ".thought__slider",
+      },
+      */
+   
+   });
+}
