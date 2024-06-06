@@ -3050,6 +3050,193 @@ a {
   transform: translateX(143%);
 }
 
+/* Page - Thought */
+
+.page-thought {
+  overflow: hidden;
+}
+
+.thought__slider {
+  height: 100dvh;
+}
+
+.thought__slider .swiper-wrapper,
+.thought__slider .swiper-slide {
+  height: inherit;
+}
+
+.thought__slider .swiper-slide {
+  display: flex;
+}
+
+.thought__slider .swiper-slide.first {
+  width: 421px;
+}
+
+.thought__slider .swiper-slide.image.first {
+  width: 1472px;
+}
+
+.thought__slider .swiper-slide.image.second {
+  width: 1510px;
+}
+
+.thought__slider .swiper-slide.image.three {
+  width: 672px;
+}
+
+.thought__slider .swiper-slide.second h2,
+.thought__slider .swiper-slide.four h2 {
+  text-align: right;
+}
+
+.thought__slider .swiper-slide.second {
+  width: 1510px;
+}
+
+.thought__slider .swiper-slide.four {
+  background-color: #1E3932;
+  width: 1250px;
+}
+
+.thought__slider .swiper-slide.four .thought__blockImage2 {
+  height: 352px;
+  width: 631px;
+}
+
+.thought__slider .swiper-slide.four .thought__blockInfo2 {
+  color: #2e2a27;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(33px);
+  width: 1110px;
+}
+
+.thought__slider .swiper-slide.four .column:nth-child(2) {
+  margin-left: 41px;
+  margin-top: -30px;
+}
+
+.thought__slider .swiper-slide.four h2,
+.thought__slider .swiper-slide.four p {
+  color: #fff;
+}
+
+.thought__slider .swiper-slide.four h2 {
+  margin: 0 90px -3px 0;
+}
+
+.thought__slider .swiper-slide .columns {
+  display: flex;
+  margin-top: 36px;
+}
+
+.thought__slider .swiper-slide .column:nth-child(2) {
+  margin-left: 52px;
+  margin-top: -10px;
+}
+
+.thought__slider .swiper-slide .column .thought__blockText {
+  max-width: 421px;
+}
+
+.thought__blockInfo,
+.thought__blockInfo2 {
+  margin-bottom: auto;
+  margin-top: auto;
+  padding-bottom: 130px;
+  padding-top: 130px;
+}
+
+.thought__blockInfo h1,
+.thought__blockInfo h2,
+.thought__blockInfo h3,
+.thought__blockInfo2 h1,
+.thought__blockInfo2 h2,
+.thought__blockInfo2 h3 {
+  font-family: "Stravinsky Trial", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 64px;
+  margin: 0;
+}
+
+.thought__blockInfo {
+  color: #2E2A27;
+  padding-right: 35px;
+}
+
+.thought__blockInfo h1 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.thought__blockInfo2 {
+  color: #2E2A27;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(-28px);
+  width: 961px;
+}
+
+.thought__blockText {
+  max-width: 340px;
+  padding-top: 30px;
+}
+
+.thought__blockText p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.3000000119px;
+  margin: 0;
+}
+
+.thought__blockText p:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.thought__blockImage,
+.thought__blockImage2 {
+  display: block;
+  position: relative;
+}
+
+.thought__blockImage img,
+.thought__blockImage2 img {
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.thought__blockImage {
+  min-height: 100%;
+  width: 100%;
+}
+
+.thought__blockImage2 {
+  height: 373px;
+  width: 373px;
+}
+
+.thought__blockImage2 img {
+  -o-object-position: 0 30%;
+     object-position: 0 30%;
+}
+
+.thought__illustration {
+  bottom: 9.1%;
+  position: absolute;
+  right: 6%;
+}
+
 /* Footer */
 
 .footer {
@@ -3415,6 +3602,10 @@ a {
   .page__illustration.mobile {
     display: none;
   }
+
+  .thought__illustration.mobile {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 641px) {
@@ -3579,6 +3770,10 @@ a {
 
 @media screen and (min-width: 1920px) {
   .first-screen {
+    height: 912px;
+  }
+
+  .thought__slider {
     height: 912px;
   }
 }
@@ -4634,6 +4829,118 @@ a {
     padding: 9px 9px;
   }
 
+  .thought__slider .swiper-slide.first {
+    width: 244px;
+  }
+
+  .thought__slider .swiper-slide.image.first {
+    width: 471px;
+  }
+
+  .thought__slider .swiper-slide.image.second {
+    width: 375px;
+  }
+
+  .thought__slider .swiper-slide.image.three {
+    width: 306px;
+  }
+
+  .thought__slider .swiper-slide.second {
+    width: 847px;
+  }
+
+  .thought__slider .swiper-slide.second h2 {
+    transform: translateX(-65px);
+  }
+
+  .thought__slider .swiper-slide.four {
+    width: 763px;
+  }
+
+  .thought__slider .swiper-slide.four .thought__blockImage2 {
+    height: 215px;
+    width: 322px;
+  }
+
+  .thought__slider .swiper-slide.four .thought__blockInfo2 {
+    transform: translateX(3px);
+    width: 650px;
+  }
+
+  .thought__slider .swiper-slide.four .column:nth-child(2) {
+    margin-left: 24px;
+    margin-top: -16px;
+  }
+
+  .thought__slider .swiper-slide.four h2 {
+    margin: 0 102px -17px 0;
+  }
+
+  .thought__slider .swiper-slide .column:nth-child(2) {
+    margin-left: 19px;
+  }
+
+  .thought__slider .swiper-slide .column .thought__blockText {
+    max-width: 330px;
+  }
+
+  .thought__blockInfo,
+  .thought__blockInfo2 {
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+
+  .thought__blockInfo h1,
+  .thought__blockInfo h2,
+  .thought__blockInfo h3,
+  .thought__blockInfo2 h1,
+  .thought__blockInfo2 h2,
+  .thought__blockInfo2 h3 {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+  }
+
+  .thought__blockInfo {
+    padding-right: 28px;
+  }
+
+  .thought__blockInfo2 {
+    transform: translateX(7px);
+    width: 620px;
+  }
+
+  .thought__blockInfo2 h3 {
+    margin: 6px 0 4px 0;
+  }
+
+  .thought__blockText {
+    padding-top: 16px;
+  }
+
+  .thought__blockText p {
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+
+  .thought__blockText p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .thought__blockImage2 {
+    height: 274px;
+    width: 274px;
+  }
+
+  .thought__illustration {
+    bottom: 3.4%;
+    right: 4%;
+  }
+
+  .thought__illustration.desktop {
+    display: none;
+  }
+
   .footer {
     padding-bottom: 32px;
     padding-top: 39px;
@@ -4819,5 +5126,11 @@ a {
   .footer__contacts a:hover,
   .footer__menu a:hover {
     color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media (max-height: 580px) {
+  .thought__slider {
+    height: auto;
   }
 }
