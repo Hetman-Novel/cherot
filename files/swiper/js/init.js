@@ -400,33 +400,77 @@ if (pageRooms5Slider) {
    });
 }
 
-const thoughtSlider = document.querySelector('.thought__slider')
-if (thoughtSlider) {
-   new Swiper(thoughtSlider, {
-      slidesPerView: 'auto',
-      freeMode: true,
-      watchOverflow: true,
-      spaceBetween: 0,
-      //loop: true,
-      speed: 800,
-      effect: 'slide',
-      preloadImages: false, // Отключить предзагрузка картинок
-      lazy: { // Lazy Loading (подгрузка картинок)
-         loadOnTransitionStart: false, // Подгружать на старте переключения слайда
-         loadPrewNext: false, // Подгрузить предыдущую и следующую картинку
-      },
-      watchSlidesProgress: true, // Слежка за видимыми слайдами
-      watchSlidesVisibility: true, // Добавление класса видимым слайдам
-      // Управление клавиатурой
-      /*
-      mousewheel: {
-         // Чувствительность колеса мыши
-         sensitivity: 1,
-         // Класс объекта на котором
-         // будет срабатывать прокрутка мышью.
-         eventsTarget: ".thought__slider",
-      },
-      */
-   
-   });
-}
+document.addEventListener('DOMContentLoaded', function() {
+   const thoughtSlider = document.querySelector('.thought__slider')
+   if (thoughtSlider) {
+      const swiperInstance = new Swiper(thoughtSlider, {
+         slidesPerView: 'auto',
+         freeMode: true,
+         watchOverflow: true,
+         spaceBetween: 0,
+         //loop: true,
+         speed: 800,
+         effect: 'slide',
+         preloadImages: false, // Отключить предзагрузка картинок
+         lazy: { // Lazy Loading (подгрузка картинок)
+            loadOnTransitionStart: false, // Подгружать на старте переключения слайда
+            loadPrewNext: false, // Подгрузить предыдущую и следующую картинку
+         },
+         watchSlidesProgress: true, // Слежка за видимыми слайдами
+         watchSlidesVisibility: true, // Добавление класса видимым слайдам
+         mousewheel: {
+            releaseOnEdges: true,
+            sensitivity: 1,
+            eventsTarget: ".thought__slider",
+         },
+         simulateTouch: false,
+         allowTouchMove: false // Отключаем горизонтальное перетаскивание
+      });
+
+      let startY = 0;
+      let currentY = 0;
+
+      thoughtSlider.addEventListener('touchstart', function(event) {
+         if (event.touches.length === 1) {
+            startY = event.touches[0].clientY;
+         }
+      });
+
+      thoughtSlider.addEventListener('touchmove', function(event) {
+         if (event.touches.length === 1) {
+            currentY = event.touches[0].clientY;
+            const diffY = startY - currentY;
+            swiperInstance.translateTo(swiperInstance.getTranslate() - diffY, 0);
+            startY = currentY;
+
+            if (swiperInstance.isEnd || swiperInstance.isBeginning || !thoughtSlider.contains(event.target)) {
+            document.body.classList.remove('lock-scroll');
+            } else {
+            document.body.classList.add('lock-scroll');
+            }
+         }
+      });
+
+      thoughtSlider.addEventListener('touchend', function(event) {
+         if (swiperInstance.isEnd || swiperInstance.isBeginning || !thoughtSlider.contains(event.target)) {
+            document.body.classList.remove('lock-scroll');
+         } else {
+            document.body.classList.add('lock-scroll');
+         }
+      });
+
+      // Дополнительный обработчик для снятия lock-scroll, если свайп был за пределами слайдера
+      document.addEventListener('touchmove', function(event) {
+         if (!thoughtSlider.contains(event.target)) {
+            document.body.classList.remove('lock-scroll');
+         }
+      });
+
+      document.addEventListener('touchend', function(event) {
+         if (!thoughtSlider.contains(event.target)) {
+            document.body.classList.remove('lock-scroll');
+         }
+      });
+
+   }
+});
