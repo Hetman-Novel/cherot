@@ -1782,8 +1782,9 @@ a {
 
 .first-screen__blockContactInfo {
   background-color: #D85B1D;
-  padding: 39px 46px 35px;
+  margin-left: auto;
   margin-top: 4.6%;
+  padding: 39px 46px 35px;
   width: 420px;
   max-width: 100%;
 }
