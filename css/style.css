@@ -2545,6 +2545,14 @@ a {
   height: auto;
 }
 
+.page-rooms .swiper-slide.half-width {
+  width: 55%;
+}
+
+.page-rooms .swiper-slide.full-width {
+  width: 100%;
+}
+
 .page-rooms__sliderBlockImage {
   display: block;
   min-height: 100%;
