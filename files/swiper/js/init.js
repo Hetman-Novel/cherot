@@ -252,7 +252,7 @@ if (pageRooms1Slider) {
          prevEl: '#page-rooms-1-slider-slider-swiper-button-prev',
          nextEl: '#page-rooms-1-slider-slider-swiper-button-next',
       },
-      slidesPerView: 1,
+      slidesPerView: "auto",
       watchOverflow: true,
       spaceBetween: 20,
       //loop: true,
@@ -267,9 +267,11 @@ if (pageRooms1Slider) {
       watchSlidesVisibility: true, // Добавление класса видимым слайдам
       breakpoints: {
          0: {
+            slidesPerView: "auto",
             spaceBetween: 9,
          },
          576: {
+            slidesPerView: "auto",
             spaceBetween: 20,
          }
       }
