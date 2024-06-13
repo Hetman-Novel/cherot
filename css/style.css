@@ -2541,8 +2541,13 @@ a {
   display: none;
 }
 
+.page-rooms .swiper-slide {
+  height: auto;
+}
+
 .page-rooms__sliderBlockImage {
   display: block;
+  min-height: 100%;
   pointer-events: none;
   padding-bottom: 82.5%;
   position: relative;
